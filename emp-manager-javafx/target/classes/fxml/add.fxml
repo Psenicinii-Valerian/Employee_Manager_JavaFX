@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="452.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.step.controller.AddDialogController">
+   <children>
+      <Label layoutX="73.0" layoutY="64.0" prefHeight="30.0" prefWidth="44.0" text="Name" />
+      <TextField fx:id="nameTxtField" layoutX="149.0" layoutY="63.0" prefHeight="31.0" prefWidth="290.0" />
+      <Label layoutX="73.0" layoutY="258.0" prefHeight="30.0" prefWidth="62.0" text="Birthdate" />
+      <DatePicker fx:id="birthdatePicker" layoutX="149.0" layoutY="258.0" prefHeight="31.0" prefWidth="290.0" />
+      <Button layoutX="229.0" layoutY="386.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="31.0" prefWidth="70.0" text="Add" />
+      <RadioButton fx:id="maleRadioBtn" layoutX="174.0" layoutY="330.0" mnemonicParsing="false" onAction="#onMaleSelect" prefHeight="21.0" prefWidth="70.0" text="Male" />
+      <RadioButton fx:id="femaleRadioBtn" layoutX="285.0" layoutY="330.0" mnemonicParsing="false" onAction="#onFemaleSelect" text="Female" />
+      <Label layoutX="73.0" layoutY="325.0" prefHeight="30.0" prefWidth="52.0" text="Gender" />
+      <Label layoutX="73.0" layoutY="127.0" prefHeight="30.0" prefWidth="62.0" text="Surname" />
+      <TextField fx:id="surnameTxtField" layoutX="149.0" layoutY="127.0" prefHeight="31.0" prefWidth="290.0" />
+      <Label layoutX="73.0" layoutY="195.0" prefHeight="30.0" prefWidth="62.0" text="Email" />
+      <TextField fx:id="emailTxtField" layoutX="149.0" layoutY="195.0" prefHeight="31.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>
